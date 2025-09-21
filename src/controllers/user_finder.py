@@ -20,7 +20,12 @@ class UserFinder(UserFinderInterface):
         formatted_users = []
         for users in selected_users:
             formatted_users.append(
-                {"id": users.id, "person_name": users.person_name, "age": users.height}
+                {
+                    "id": users.id,
+                    "person_name": users.person_name,
+                    "age": users.age,
+                    "height": users.height,
+                }
             )
 
         return {
