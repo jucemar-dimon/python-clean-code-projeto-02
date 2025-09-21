@@ -46,7 +46,7 @@ def test_insert_new_user():
     assert user_repository.insert_user_att["age"] == age
 
     assert isinstance(response, dict)
-    assert "type" in response
+    assert "Type" in response
     assert response["count"] == 1
     assert response["message"] == "Usuário cadastrado com sucesso!"
 

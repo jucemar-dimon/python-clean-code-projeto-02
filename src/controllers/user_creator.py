@@ -22,7 +22,7 @@ class UserCreator:
 
     def __format_response(self) -> dict:
         return {
-            "type": "Users",
+            "Type": "Users",
             "count": 1,
             "message": "Usuário cadastrado com sucesso!",
         }
