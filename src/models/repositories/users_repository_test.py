@@ -1,12 +1,12 @@
 import pytest
 from src.models.connection.db_connection_handler import DbConnectionHandler
-from .users_repository import UsersRepositories
+from .users_repository import UsersRepository
 
 
 @pytest.mark.skip(reason="Insert in DB")
 def test_users_repository():
     db_conn = DbConnectionHandler()
-    users_repo = UsersRepositories(db_conn)
+    users_repo = UsersRepository(db_conn)
 
     person_name = "Meu Nome Teste"
     age = 55
