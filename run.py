@@ -1,8 +1,4 @@
-def do_something():  # snake_case
-    minha_variavel = 123
-    print(minha_variavel)
+from src.main.server.server import app
 
-
-def do_something3():  # PascalCase
-    MinhaVariavel = 123
-    print(MinhaVariavel)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=3000)
